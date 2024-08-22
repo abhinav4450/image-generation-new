@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import SearchBar from "../components/SearchBar";
 import ImageCard from "../components/cards/ImageCard";
-import { GetPosts } from "../api";
+import { GetPosts } from "../api/index-API";
 import { CircularProgress } from "@mui/material";
 
 const Container = styled.div`
