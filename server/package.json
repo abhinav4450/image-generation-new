@@ -17,6 +17,6 @@
     "nodemon": "^2.0.22",
     "openai": "^3.3.0"
   },
-  "author": "Rishav",
+  "author": "Abhinav Agnihotri",
   "license": "ISC"
 }
