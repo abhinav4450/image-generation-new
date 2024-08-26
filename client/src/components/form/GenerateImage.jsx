@@ -99,7 +99,7 @@ const GenerateImage = ({
       </Top>
       <Body>
         <TextInput
-          label="Author"
+          label="name"
           placeholder="Enter your name"
           name="name"
           value={post.name}

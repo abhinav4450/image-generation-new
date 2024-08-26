@@ -92,9 +92,9 @@ const Home = () => {
     }
     const filteredPosts = posts.filter((post) => {
       const promptMatch = post?.prompt?.toLowerCase().includes(search);
-      const authorMatch = post?.author?.toLowerCase().includes(search);
+      const nameMatch = post?.name?.toLowerCase().includes(search);
 
-      return promptMatch || authorMatch;
+      return promptMatch || nameMatch ;
     });
 
     if (search) {
@@ -110,7 +110,10 @@ const Home = () => {
       </HeadLine>
       <SearchBar
         search={search}
-        handleChange={(e) => setSearch(e.target.value)}
+        handleChange={(e) => {
+          console.log(e.target.value);
+          setSearch(e.target.value);
+        }}
       />
       <Wrapper>
         {error && <div style={{ color: "red" }}>{error}</div>}
